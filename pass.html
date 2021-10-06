@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
- <title>page of pass.html</title>
+<head>
+<title>page of pass.html</title>
+
 <body>
 
 <h2>Pass phrase by Vijay Kumar Chunchu</h2>
@@ -48,7 +50,7 @@ function resolveForm (){
 </form>
 
 <p id="result">Get your results here </p>
-<head>
+
 <script>
     var correct = 0, wrong = 0;
     function processPhrase() {
@@ -64,6 +66,7 @@ function resolveForm (){
             wrong = wrong + 1;
             document.getElementById("result").innerHTML = "Wrong count " + wrong;
             alert("access denied");
+        
         }
     }
   </script>
@@ -73,7 +76,7 @@ function resolveForm (){
 
   <button type="button" onclick="newImage()">Go to Next Image</button>
   <script>
-  let usingImage = 1;
+  var usingImage = 1;
    function newImage(){
     img = document.getElementById("Horse")
     switch (usingImage) {
