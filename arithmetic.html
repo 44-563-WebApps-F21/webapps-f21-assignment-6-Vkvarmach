@@ -8,7 +8,7 @@
 
 
 <h2>Vijay Kumar Computes </h2>
-<div class="container-fluid">
+<div class="arithmetic">
 <form>
     <label for="form1_num1">Enter a base </label>
     <input type ="number" id="form1_num1" name="form1_num1" value=10> <br>
@@ -51,7 +51,7 @@ function powers (){
     
     
     out = document.getElementById("output")
-    for(let i=1;i<=number2;i++){
+    for(var i=1;i<=number2;i++){
         result += Math.pow(number1, i) + " ";
     }
         out.innerHTML = "Powers of "+ number1 + " are : "+ result
