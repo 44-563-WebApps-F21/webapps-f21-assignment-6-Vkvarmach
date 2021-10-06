@@ -67,6 +67,34 @@ function resolveForm (){
         }
     }
   </script>
+  <div class="container">
+      <img src="Horse.jpg" id="Horse" alt="Horse in a beach" style="width:200px;height:200px;" onclick="newImage()"> 
+  </div>
+
+  <button type="button" onclick="newImage()">Go to Next Image</button>
+  <script>
+  let usingImage = 1;
+   function newImage(){
+    img = document.getElementById("Horse")
+    switch (usingImage) {
+        case 1:
+            img.src = "Camel.jpg"
+            usingImage = 2
+            break;
+        case 2:
+            img.src = "Cat.jpg"
+            usingImage = 3
+            break;
+        case 3:
+            img.src = "Horse.jpg"  
+            usingImage = 1
+            break;  
+        default:
+            break;
+    }
+}
+</script>
+
 </head>
 </body>
 </html> 
