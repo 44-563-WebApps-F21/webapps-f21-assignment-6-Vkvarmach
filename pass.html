@@ -2,7 +2,15 @@
 <html>
 <head>
 <title>page of pass.html</title>
-
+<style>
+    form{
+        background-color: rgb(250, 234, 16);
+        border: solid rgb(14, 209, 235);
+    }
+    h1{
+        font-family: Arial, sans-serif;
+    }
+</style>
 <body>
 
 <h2>Pass phrase by Vijay Kumar Chunchu</h2>
@@ -66,7 +74,9 @@ function resolveForm (){
             wrong = wrong + 1;
             document.getElementById("result").innerHTML = "Wrong count " + wrong;
             alert("access denied");
-        
+        if(wrong>3){
+            alert("account locked");
+        }
         }
     }
   </script>
